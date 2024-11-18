@@ -9,4 +9,4 @@ function createUser(username,email,password){
     this.password=password
 }
 const Ayush=new createUser("Ayush","aysuh@gmail.com",123456)
-console.log(Ayush)
+console.log(Ayush);
