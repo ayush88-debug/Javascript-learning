@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Javascript</H1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const Display=function(str){
+        console.log(str, Date.now())
+    }
+    let IntervalId
+    document.getElementById("start").addEventListener("click",function(){
+        IntervalId=setInterval(Display,1000,"Ayush")
+    })
+
+    document.getElementById("stop").addEventListener("click",function(){
+        clearInterval(IntervalId)
+    })
+</script>
+</html>

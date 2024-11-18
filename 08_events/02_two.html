@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Ayush Ghavghave</h1>
+    <input type="button" value="Stop" id="button">
+</body>
+<script>
+    const DisplayName=function(){
+        console.log("The Software Engineer")
+        document.querySelector("#heading").innerHTML=`The Software Engineer`
+    }
+
+    let TimeoutId= setTimeout(DisplayName,2000)
+
+    const StopTimeOut=function(){
+        clearTimeout(TimeoutId)
+        console.log("Stopped")
+    }
+
+    document.querySelector("#button").addEventListener("click",StopTimeOut)
+
+</script>
+</html>
